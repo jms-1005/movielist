@@ -1,0 +1,23 @@
+
+<div *ngFor="let movie of movieList">
+  <div class="movieContainer" [class.future]="isFuture(movie.releaseDate)">
+      {{ movie.name }}
+      {{ movie.releaseDate }}
+
+
+      <releasedate [isItFuture]="isFuture(movie.releaseDate)"></releasedate>
+  </div>
+</div>
+
+
+First Name: <input type="text" [(ngModel)]="firstName">
+Last Name: <input type="text" [(ngModel)]="lastName">
+
+<h1>LOGIN</h1>
+
+Email/username: <input type="text" [(ngModel)]="email">
+Password: <input type="password" [(ngModel)]="password">
+
+<button (click)="verifyLogin()" > Click here</button>
+
+

@@ -1,0 +1,10 @@
+<!--
+
+  If isReleased is false, then the date is in the future. ! of that will make it true
+  If true, then future class will be added to list of classes making the circle yellow
+
+  If isReleased is true, then the date is past. ! of true will make it false
+  Since it is false, the class 'future' will not be added to the list of classes
+
+ -->
+<div class="release" [class.future]="isItFuture"></div>
